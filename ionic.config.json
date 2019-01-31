@@ -1,0 +1,7 @@
+{
+  "name": "icc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

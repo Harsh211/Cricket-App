@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>ICC</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let x of news">
+      <img src="{{x.urlToImage}}"/>
+    <ion-card-content> 
+        <h3><b>{{x.title}}</b></h3>
+        <p>{{x.description}}</p>
+    </ion-card-content>
+  </ion-card>
+  <br>
+</ion-content>
