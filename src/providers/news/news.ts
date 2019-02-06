@@ -20,7 +20,7 @@ export class NewsProvider {
   getNews() {
     return new Promise(resolve => {
       this.http.get(this.url).subscribe((data:any) => {
-        console.log("news response is:"+JSON.stringify(data));
+        //console.log("news response is:"+JSON.stringify(data));
         resolve(data);
       }, err => {
         console.log(err);

@@ -14,16 +14,31 @@
 
 
 <ion-content padding>
-  <ion-content padding>
     <ion-item> 
+        <ion-label floating>First Name</ion-label>
+        <ion-input type="text" [(ngModel)]="inputtext"></ion-input>
+    </ion-item>
+
+    <ion-item> 
+        <ion-label floating>Last Name</ion-label>
+        <ion-input type="text" [(ngModel)]="user.lname"></ion-input>
+    </ion-item>
+    
+    <ion-item> 
+        <ion-label floating> Mobile Number</ion-label>
+        <ion-input type="number" [(ngModel)]="user.mobile"></ion-input>
+    </ion-item>
+
+    <ion-item>
       <ion-label floating>Email Address</ion-label>
-        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-label floating> Password </ion-label>
-        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
     </ion-item>
+    <br>
 
-    <button ion-button (click)="register(user)">Register</button>
+    <button ion-button (click)="register(user)" (click)="saveData()">Register</button>
 </ion-content>

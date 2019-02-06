@@ -3,6 +3,9 @@
     <ion-title>
       Matches
     </ion-title>
+    <ion-buttons end>
+        <button ion-button (click)="logout()">Logout</button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -14,6 +17,6 @@
     <button ion-button block>Results</button>
   </p>
   <p>
-    <button ion-button block>Tours</button>
+    <button ion-button block (click)="joinRoom(user)">Chat Room</button>
   </p>
 </ion-content>
